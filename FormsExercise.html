@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms Exercise</title>
+</head>
+<body>
+<!-- first name, last name, and email are required  -->
+<!-- email must be correct format -->
+<!-- BONUS password must be between 5 & 10 characters  -->
+<h1>Register</h1>
+<form>
+<div>
+  <label for="FirstName">First Name: </label>
+  <input id="FirstName" type="text" placeholder="John" required>
+  <label for="LastName">Last Name: </label>
+  <input id="LastName" type="text" placeholder="Smith" required>
+</fiv>
+
+
+<div>
+  <label for="Male">Male</label>
+  <input id="Male"type="radio" name="GenderChoice" value="choice-1">
+  <label for="Female">Female</label>
+  <input id="Female"type="radio" name="GenderChoice" value="choice-2">
+  <label for="Other">Other</label>
+  <input id="Other"type="radio" name="GenderChoice" value="choice-3">
+
+
+</div>
+
+<div>
+  <label for="Email">Email: </label>
+  <input id="Email" type="email" placeholder="example@example.com" required>
+  <label for="Password">Password: </label>
+  <input id="Password" type="password" placeholder="password" pattern=".{5,10}"  required title="5 to 10 characters">
+
+</div>
+<label for="BDay">Birthday: </label>
+
+<select id="BDay" name="DOBMonth">
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+
+</select>
+
+<select id="BDay" name="DOBDay">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+
+</select>
+
+<select id="BDay" name="DOBDay">
+  <option value="1980">1980</option>
+  <option value="1981">1981</option>
+  <option value="1982">1982</option>
+  <option value="1983">1983</option>
+  <option value="1984">1984</option>
+
+</select>
+
+<div>
+<label for="accept">I agree to the terms and conditions</label>
+<input id="accept" type="checkbox">
+
+</div>
+<div>
+<button type="submit" name="button">Submit</button>
+</div>
+</form>
+</body>
+</html>
